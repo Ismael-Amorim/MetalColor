@@ -99,7 +99,8 @@ body {
     margin-bottom: 1.1rem;
 }
 
-.input-box input {
+.input-box input,
+textarea {
     margin: 5x 0;
     padding: 0px;
     border: none;
@@ -108,22 +109,26 @@ body {
     font-size: 0.8rem;
 }
 
-.input-box input:hover {
+.input-box input:hover,
+textarea:hover {
     background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible {
+.input-box input:focus-visible,
+textarea:focus-visible {
     outline: 1px solid rgba(0, 128, 0, 0.705);
 }
 
 .input-box label,
-.type-title {
+.type-title,
+textarea label {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
 }
 
-.input-box ::placeholder {
+.input-box::placeholder,
+textarea ::placeholder {
     color: #000000be;
 }
 
@@ -143,7 +148,8 @@ body {
     margin-right: 0.35rem;
 }
 
-.type-input label {
+.type-input label,
+textarea label {
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
@@ -196,7 +202,7 @@ body {
 footer {
     position: fixed;
     width: 100%;
-    bottom: 30px;
+    bottom: 35px;
     margin-left: -400px;
 }
 
@@ -225,13 +231,31 @@ footer {
     }
 
     footer {
-        position: absolute;
-        width: 50%;
+        position: relative;
+        width: 100%;
         margin-left: 30%;
         bottom: 1px;
+    }
 
+    .form input {
+        width: 100%;
+    }
+
+    .form #img {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .input-box #teste {
+        height: 50px;
+    }
+
+    #logo {
+        position: relative;
     }
 }
+
+
 
 @media screen and (max-width: 1064px) {
     .container {
