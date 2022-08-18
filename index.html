@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Color: Orçamentos</title>
     <link rel="stylesheet" href="estilo.css">
@@ -62,7 +62,7 @@
 
                     <div class="input-box">
                         <label for="Imagem">Imagem</label>
-                        <input type="file" name="attachment" accept="image/png, image/jpeg">
+                        <input id="img" type="file" name="attachment" accept="image/png, image/jpeg">
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
 
                     <div class="type-inputs">
                         <div class="input-box">
-                            <input id="banho" type="text" name="banho" placeholder="Ouro, Prata">
+                            <input id="banho" type="text" name="pintura" placeholder="Ouro, Prata">
                         </div>
                     </div>
 
@@ -94,16 +94,18 @@
                         <div class="type-title">
                             <h4>Tipo do produto</h4>
                         </div>
+
                         <div class="input-box">
-                            <input type="text" name="Tipo do produto"
-                                placeholder="Arganel, Pin, Chaveiro, Medalha, Machadinha ou Troféu" size="50">
+                            <textarea id="teste" type="text" name="Tipo do produto"
+                                placeholder="Arganel, Pin, Chaveiro, Medalha, Machadinha ou Troféu"
+                                size="50"></textarea>
                             <label for="Tipo do produto"></label>
                         </div>
                     </div>
                     <div class="continue-button">
                         <button>Solicitar orçamento</button>
                     </div>
-                    <input type="hidden" name="_next" value="https://ismael-amorim.github.io/MetalColor/obrigado.html">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
                     <input type="hidden" name="_subject" value="Novo orçamento recebido de:">
 
             </form>
