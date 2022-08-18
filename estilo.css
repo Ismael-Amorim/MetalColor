@@ -252,6 +252,7 @@ footer {
 
     #logo {
         position: relative;
+        margin-left: -80px;
     }
 }
 
